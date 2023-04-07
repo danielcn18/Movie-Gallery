@@ -1,0 +1,72 @@
+:root {
+    --myColor: #111111;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--myColor);
+}
+#contain{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+}
+#heading{
+    width: 100%;
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    border-top: 1px solid white;
+    border-bottom: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+#heading>p{
+    margin-left: 3%;
+}
+p{
+    margin: 0;
+}
+#grid-contain-x{
+    height: 85%;
+    width: 94%;
+    margin: auto;
+    display: grid;
+    background-color: white;
+    grid-column-gap: 12px;
+    grid-template-columns: 48vw repeat(4, 26vw);
+    grid-template-rows: repeat(2, 1fr);
+    overflow-x: scroll;
+}
+#grid-contain-x::-webkit-scrollbar{
+    display: none;
+}
+#grid-one,
+#grid-two,
+#grid-three,
+#grid-four,
+#grid-five{
+    grid-column: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.transparent-box{
+    height: 18%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+#grid-one{
+    grid-row: 1/3;
+    background-image: url('./Images/the-arcade.jpg');
+}
+#grid-two{
+    grid-row: 1;
+    background-image: url('./Images/equal-minds.jpg');
+}
