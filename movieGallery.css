@@ -36,31 +36,61 @@ p{
     width: 94%;
     margin: auto;
     display: grid;
-    background-color: white;
+    background-color: transparent;
     grid-column-gap: 12px;
-    grid-template-columns: 48vw repeat(4, 26vw);
+    grid-template-columns: 46vw;
+    grid-auto-columns: 21vw;
     grid-template-rows: repeat(2, 1fr);
     overflow-x: scroll;
+    grid-row-gap: 12px;
 }
 #grid-contain-x::-webkit-scrollbar{
     display: none;
 }
-#grid-one,
-#grid-two,
-#grid-three,
-#grid-four,
-#grid-five{
+#grid-contain-x>div{
     grid-column: auto;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
 }
-.transparent-box{
-    height: 18%;
+.main-transparent-box{
+    height: 17%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
+}
+.main-box-text{
+    margin: 2vh 1vw 0 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-box-text>h2{
+    display: inline;
+    font-size: 24px;
+}
+.main-box-text>p{
+    font-size: 12px;
+    margin-top: 8px;
+    color: rgb(227, 227, 227);
+}
+.sub-transparent-box{
+    height: 38%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.sub-box-text{
+    margin: 2vh 1vw 0 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub-box-text>h2, .sub-box-text>h3{
+    display: inline;
+    font-size: 21px;
+}
+.sub-box-text>p{
+    font-size: 12px;
+    margin-top: 6px;
+    color: rgb(227, 227, 227);
 }
 #grid-one{
     grid-row: 1/3;
@@ -69,4 +99,53 @@ p{
 #grid-two{
     grid-row: 1;
     background-image: url('./Images/equal-minds.jpg');
+}
+#grid-three{
+    grid-row: 2;
+    background-image: url('./Images/the-larper.jpg');
+}
+#grid-four{
+    grid-row: 1;
+    background-image: url('./Images/prepared.jpg');
+}
+#grid-five{
+    grid-row: 2;
+    background-image: url('./Images/traffic.jpg');
+}
+#grid-six{
+    grid-row: 1;
+    background-image: url('./Images/rudolph.jpg');
+}
+@media screen and (max-width: 1290px){
+    .main-box-text>h2{
+        display: inline;
+        font-size: 16px;
+    }
+    .main-box-text>p{
+        font-size: 12px;
+    }
+    .sub-box-text>h2, .sub-box-text>h3{
+        font-size: 16px;
+    }
+    .sub-box-text>p{
+        font-size: 12px;
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width: 1030px){
+    .main-box-text>h2{
+        display: inline;
+        font-size: 14px;
+    }
+    .main-box-text>p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .sub-box-text>h2, .sub-box-text>h3{
+        font-size: 14px;
+    }
+    .sub-box-text>p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
 }
