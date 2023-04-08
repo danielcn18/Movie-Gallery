@@ -92,6 +92,10 @@ p{
     margin-top: 6px;
     color: rgb(227, 227, 227);
 }
+.box-image{
+    height: 100%;
+    width: 100%;
+}
 #grid-one{
     grid-row: 1/3;
     background-image: url('./Images/the-arcade.jpg');
@@ -116,7 +120,7 @@ p{
     grid-row: 1;
     background-image: url('./Images/rudolph.jpg');
 }
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 1600px){
     .main-box-text>h2{
         display: inline;
         font-size: 16px;
@@ -132,20 +136,146 @@ p{
         margin-top: 7px;
     }
 }
+@media screen and (max-width: 1400px){
+    #grid-contain-x{
+        grid-column-gap: 24px;
+        grid-template-columns: 94vw;
+        grid-auto-columns: 94vw;
+        grid-template-rows: 1fr;
+    }
+    #grid-contain-x>div{
+        background-size: 680px;
+        grid-row: 1;
+    }
+    .transparent-box{
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 1.2;
+    }
+    .box-text{
+        margin: 0 4vh 0 1vw;
+        width: 32%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 50px;
+    }
+    .box-text>p{
+        font-size: 35px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 1240px){
+    #grid-contain-x>div{
+        background-size: 640px;
+    }
+    .box-text{
+        margin: 0 0 0 2vw;
+        width: 38%;
+    }
+}
+@media screen and (max-width: 1165px){
+    #grid-contain-x>div{
+        background-size: 580px;
+    }
+    .box-text{
+        margin: 0 2vh 0 1vw;
+        width: 34%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 40px;
+    }
+    .box-text>p{
+        font-size: 28px;
+    }
+}
 @media screen and (max-width: 1030px){
-    .main-box-text>h2{
-        display: inline;
-        font-size: 14px;
+    #grid-contain-x>div{
+        background-size: 570px;
     }
-    .main-box-text>p{
-        font-size: 11px;
-        margin-top: 5px;
+}
+@media screen and (max-width: 990px) {
+    #grid-contain-x>div{
+        background-size: 510px;
     }
-    .sub-box-text>h2, .sub-box-text>h3{
-        font-size: 14px;
+    .box-text>h2, .box-text>h3{
+        font-size: 36px;
     }
-    .sub-box-text>p{
-        font-size: 11px;
-        margin-top: 5px;
+    .box-text>p{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 880px) {
+    #grid-contain-x>div{
+        background-size: 450px;
+    }
+    .box-text{
+        margin: 0 1vh 0 1vw;
+        width: 34%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 34px;
+    }
+    .box-text>p{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 765px) {
+    #grid-contain-x>div{
+        background-size: 420px;
+    }
+    .box-text{
+        margin: 0 1vh 0 1vw;
+        width: 34%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 32px;
+    }
+    .box-text>p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 710px) {
+    #grid-contain-x>div{
+        background-size: 390px;
+    }
+    .box-text{
+        margin: 0;
+        width: 34%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 30px;
+    }
+    .box-text>p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 635px) {
+    #grid-contain-x>div{
+        background-size: cover;
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+    }
+    .transparent-box{
+        height: 18%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: block;
+        line-height: 1.2;
+    }
+    .box-text{
+        margin: 5px 1vh 0 1vw;
+        width: 98%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 24px;
+    }
+    .box-text>p{
+        font-size: 18px;
+        margin-top: 2px;
     }
 }
