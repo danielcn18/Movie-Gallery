@@ -144,7 +144,7 @@ p{
         grid-template-rows: 1fr;
     }
     #grid-contain-x>div{
-        background-size: 680px;
+        background-size: 775px;
         grid-row: 1;
     }
     .transparent-box{
@@ -167,6 +167,11 @@ p{
         margin-top: 6px;
     }
 }
+@media screen and (max-width: 1310px){
+    #grid-contain-x>div{
+        background-size: 715px;
+    }
+}
 @media screen and (max-width: 1240px){
     #grid-contain-x>div{
         background-size: 640px;
@@ -178,10 +183,10 @@ p{
 }
 @media screen and (max-width: 1165px){
     #grid-contain-x>div{
-        background-size: 580px;
+        background-size: 680px;
     }
     .box-text{
-        margin: 0 2vh 0 1vw;
+        margin: 0;
         width: 34%;
     }
     .box-text>h2, .box-text>h3{
@@ -191,74 +196,21 @@ p{
         font-size: 28px;
     }
 }
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1130px){
     #grid-contain-x>div{
-        background-size: 570px;
+        background-size: 640px;
     }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1060px){
     #grid-contain-x>div{
-        background-size: 510px;
-    }
-    .box-text>h2, .box-text>h3{
-        font-size: 36px;
-    }
-    .box-text>p{
-        font-size: 26px;
+        background-size: 600px;
     }
 }
-@media screen and (max-width: 880px) {
-    #grid-contain-x>div{
-        background-size: 450px;
-    }
-    .box-text{
-        margin: 0 1vh 0 1vw;
-        width: 34%;
-    }
-    .box-text>h2, .box-text>h3{
-        font-size: 34px;
-    }
-    .box-text>p{
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 765px) {
-    #grid-contain-x>div{
-        background-size: 420px;
-    }
-    .box-text{
-        margin: 0 1vh 0 1vw;
-        width: 34%;
-    }
-    .box-text>h2, .box-text>h3{
-        font-size: 32px;
-    }
-    .box-text>p{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width: 710px) {
-    #grid-contain-x>div{
-        background-size: 390px;
-    }
-    .box-text{
-        margin: 0;
-        width: 34%;
-    }
-    .box-text>h2, .box-text>h3{
-        font-size: 30px;
-    }
-    .box-text>p{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 635px) {
+
+@media screen and (max-width: 1000px){
     #grid-contain-x>div{
         background-size: cover;
-        display: flex;
-        justify-self: center;
-        width: 100%;
-        height: 100%;
+        background-position-x: center;
     }
     .transparent-box{
         height: 18%;
@@ -272,10 +224,62 @@ p{
         width: 98%;
     }
     .box-text>h2, .box-text>h3{
-        font-size: 24px;
+        font-size: 30px;
     }
     .box-text>p{
-        font-size: 18px;
+        font-size: 25px;
         margin-top: 2px;
+    }
+}
+@media screen and (max-width: 635px) {
+    #grid-contain-x>div{
+        background-size: cover;
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+        background-position-x: center;
+    }
+    .transparent-box{
+        height: 18%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: block;
+        line-height: 1.2;
+    }
+    .box-text{
+        margin: 5px 1vh 0 1vw;
+        width: 98%;
+    }
+    .box-text>h2, .box-text>h3{
+        font-size: 22px;
+    }
+    .box-text>p{
+        font-size: 16px;
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width: 400px){
+    .box-text>h2, .box-text>h3{
+        font-size: 22px;
+    }
+    .box-text>p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 370px){
+    .box-text>h2, .box-text>h3{
+        font-size: 20px;
+    }
+    .box-text>p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 370px){
+    .box-text>h2, .box-text>h3{
+        font-size: 18px;
+    }
+    .box-text>p{
+        font-size: 12px;
     }
 }
